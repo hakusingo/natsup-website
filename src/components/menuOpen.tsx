@@ -26,12 +26,12 @@ const MenuOpen: React.FC<MenuOpenProps> = (props) => {
               </li>
               <li className='mb-6'>
                 <Link href="/">
-                  WOMEN'S MENU
+                  WOMEN&apos;S MENU
                 </Link>
               </li>
               <li className='mb-6'>
                 <Link href="/">
-                  MEN'S MENU
+                  MEN&apos;S MENU
                 </Link>
               </li>
               <li className='mb-6'>

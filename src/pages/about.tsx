@@ -4,16 +4,9 @@ import Hero from '@/components/parts/hero';
 import Image from 'next/image';
 import Endroll from '@/components/parts/endroll';
 
-type HeroData = {
-  pageName: string;
-  pageTitle: string;
-  imagePath: string;
-  aboutContets: string;
-};
-
 const aboutSugaringTitle = "シュガーリングについて"
 
-const Contents = (props) => {
+const Contents = (props: any) => {
   return (
     <div className='mx-auto px-4 container '>
       <p className='whitespace-pre-wrap font-mill leading-loose text-[14px] text-[#656565]'>{props.contentsText}</p>
@@ -22,7 +15,7 @@ const Contents = (props) => {
 }
 
 
-const Heading = (props) => {
+const Heading = (props: any) => {
   return (
     <div className='mt-24 px-4 container mx-auto'>
       <h3 className='text-center font-mill text-[14px] text-main-gold tracking-widest'>
@@ -93,7 +86,7 @@ const owner: string = `
 `
 
 const Home = () => {
-  const heroData: HeroData = {
+  const heroData = {
     pageName: 'ABOUT',
     pageTitle: 'Natupiについて',
     imagePath: '/about/about-hero.jpg',
