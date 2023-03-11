@@ -9,8 +9,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        mill: ['Sorts Mill Goudy', 'serif'],
+      },
       colors: {
         "main-gold":  "#93711C",
+        "main-brown": "#A15942"
       },
     },
   },

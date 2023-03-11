@@ -1,15 +1,22 @@
 import React, { ReactNode } from 'react';
 import Header from './header';
 import Footer from './footer';
+import { useState } from 'react';
 
 type LayoutProps = {
-  children: ReactNode; // 子要素を受け取るためのprops
+  children: ReactNode;
 };
 
-const Layout = ({ children }: LayoutProps) => {
+const Layout: React.FC<LayoutProps> = ({ children }) => {
+  
+  const [menuOpen, setMenuOpen] = useState<boolean>(true);
+
   return (
     <>
-      <Header />
+      <Header
+        menuOpen={menuOpen}
+        setMenuOpen={setMenuOpen}
+      />
         {children}
       <Footer />
     </>
