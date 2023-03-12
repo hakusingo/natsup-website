@@ -6,7 +6,7 @@ const Hero = ( props: any ) => {
     <div className='px-4 container mx-auto'>
       <div className="mt-20 pl-4">
         <h2 className='text-[28px] font-thin text-main-gold'>
-          {props.pageName}
+          {props.heroData.pageName}
         </h2>
         <hr className='h-[2px] w-[100px] pl-8 bg-main-gold ml-6' />
       </div>
@@ -14,8 +14,8 @@ const Hero = ( props: any ) => {
         <p className='text-center text-[14px] text-main-gold tracking-widest font-mill'>{props.pageTitle}</p>
         <Image
           className='mt-4'
-          src={props.imagePath}
-          alt={props.pageName}
+          src={props.heroData.imagePath}
+          alt={props.heroData.pageName}
           width={500}
           height={500}
         />
